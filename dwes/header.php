@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="header">
-        <img src="1f3e8.png" alt="" class="logo" height="100px">
+        <img src="./img/1f3e8.png" alt="" class="logo" height="100px">
         <h1>
             <a href="index.php">Sing up</a>
         </h1>
