@@ -1,11 +1,10 @@
 .header {
     background-color: rgb(35, 37, 63);
-    margin: 0px;
+    margin: 0%;
 }
 .header h1 {
     margin-right: 3%;
     margin-left: 3%;
-    float: right;
 }
 .header h1 a{
     text-decoration: none;
