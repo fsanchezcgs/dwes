@@ -9,7 +9,7 @@
     $sql = "INSERT INTO customers
     (customer_first_name, customer_last_name, customer_phone_number, customer_email)
     VALUES
-    ('$customer_name', '$customer_surname', '$customer_number', 'customer_email')";
+    ('$customer_name', '$customer_surname', '$customer_number', '$customer_email')";
 
     $result = mysqli_query($con, $sql);
 ?>

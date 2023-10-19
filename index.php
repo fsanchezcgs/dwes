@@ -10,13 +10,5 @@
 </head>
 <body>
     <?php include ('./header.php'); ?>
-
-    <?php include ('./form/form_reservations_select.php'); ?>
-    <br>
-    <?php include ('./form/form_rooms_insert.php'); ?>
-    <br>
-    <?php include ('./form/form_customer_select.php'); ?>
-    <br>
-    <?php include ('./form/form_customer_insert.php'); ?>
 </body>
 </html>

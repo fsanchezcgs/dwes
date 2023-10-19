@@ -10,18 +10,27 @@
 </head>
 <body>
     <nav class="header navbar">
-        <img src="./img/1f3e8.png" alt="" class="logo" height="100px">
+        <img src="/student046/dwes/img/1f3e8.png" alt="" class="logo" height="100px">
         <h1>
-            <a href="index.php">Sing up</a>
+            <a href="/student046/dwes/form/form_customer_select.php">customer select</a>
         </h1>
         <h1>
-            <a href="index.php">Log in</a>
+            <a href="/student046/dwes/form/form_customer_insert.php">customer insert</a>
         </h1>
         <h1>
-            <a href="index.php">Reservations</a>
+            <a href="index.php">customer update</a>
         </h1>
         <h1>
-            <a href="index.php">Home</a>
+            <a href="index.php">customer delete</a>
+        </h1>
+        <h1>
+            <a href="/student046/dwes/form/form_reservation_insert.php">reservation insert</a>
+        </h1>
+        <h1>
+            <a href="/student046/dwes/form/form_room_select.php">room select</a>
+        </h1>
+        <h1>
+            <a href="/student046/dwes/form/form_room_insert.php">room insert</a>
         </h1>
     </nav>
 </body>
