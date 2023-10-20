@@ -21,7 +21,7 @@
             <a href="index.php">customer update</a>
         </h1>
         <h1>
-            <a href="index.php">customer delete</a>
+            <a href="/student046/dwes/form/form_customer_delete_call.php">customer delete</a>
         </h1>
         <h1>
             <a href="/student046/dwes/form/form_reservation_insert.php">reservation insert</a>

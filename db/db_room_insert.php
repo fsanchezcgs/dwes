@@ -1,13 +1,12 @@
 <?php
-    $date_in = $_POST['date_in'];
-    $date_out = $_POST['date_out'];
+    $room_type = $_POST['room_type'];
 
     include('./db_connect.php');
 
     $sql = "INSERT INTO rooms
-    (room_type, room_status)
+    (room_type)
     VALUES
-    (1, )";
+    ($room_type)";
 
     $result = mysqli_query($con, $sql);
 ?>
