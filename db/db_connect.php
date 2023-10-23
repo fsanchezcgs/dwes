@@ -4,9 +4,9 @@
     $server = "localhost";
     $database = "hotel";
 
-    $con = mysqli_connect($server, $user, $password, $database);
+    $conn = mysqli_connect($server, $user, $password, $database);
 
-    if(!$con) {
+    if(!$conn) {
         echo 'Connection error: ' . mysqli_connect_error();
     }
 ?>

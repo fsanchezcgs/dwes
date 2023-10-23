@@ -11,7 +11,7 @@
         FROM reservations AS re
         WHERE date_in < '$date_out' AND date_out > '$date_in')";
 
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query($conn, $sql);
 
     $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

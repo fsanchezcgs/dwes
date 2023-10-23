@@ -7,5 +7,5 @@
     FROM customers
     WHERE customer_id = $customer_id";
 
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query($conn, $sql);
 ?>

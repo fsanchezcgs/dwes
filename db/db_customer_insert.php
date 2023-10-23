@@ -11,5 +11,5 @@
     VALUES
     ('$customer_name', '$customer_surname', '$customer_number', '$customer_email')";
 
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query($conn, $sql);
 ?>

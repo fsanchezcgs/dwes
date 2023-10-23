@@ -3,7 +3,7 @@
 
     $sql = "SELECT * FROM customers";
 
-    $result = mysqli_query($con, $sql);
+    $result = mysqli_query($conn, $sql);
 
     $customer = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

@@ -2,11 +2,7 @@
     background-color: rgb(35, 37, 63);
     margin: 0%;
 }
-.header h1 {
-    margin-right: 3%;
-    margin-left: 3%;
-}
-.header h1 a{
+.header h4 a{
     text-decoration: none;
     color: white;
 }
