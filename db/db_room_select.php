@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     $date_in = $_POST['date_in'];
     $date_out = $_POST['date_out'];
@@ -9,11 +10,14 @@
     WHERE ro.room_id NOT IN (
         SELECT re.room_id
         FROM reservations AS re
-        WHERE date_in < '$date_out' AND date_out > '$date_in')";
+        WHERE date_in <= '$date_out' AND date_out >= '$date_in')";
 
     $result = mysqli_query($conn, $sql);
 
     $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    print_r($rooms);
+    foreach($customers as $customer) {
+        print_r($customer);
+        echo "<br>";
+    }
 ?>

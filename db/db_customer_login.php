@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     // Capture variables
     $user = $_POST['user'];
@@ -7,11 +8,16 @@
 
     $sql = "SELECT *
             FROM customers
-            WHERE customer_email = '$user'
+            WHERE customer_first_name = '$user'
             AND customer_pwd = '$pwd'";
 
     $result = mysqli_query($conn, $sql);
     $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    echo 'hello '.$customers[0]['customer_last_name'];
+    if(empty($customers)){
+
+    } else {
+        $_SESSION['user'] = $_POST['user'];
+        echo $_SESSION['user'];
+    }
 ?>

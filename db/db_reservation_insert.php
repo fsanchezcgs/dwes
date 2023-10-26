@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     $room_id = $_POST['room_id'];
     $date_in = $_POST['date_in'];

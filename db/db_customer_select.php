@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     include('./db_connect.php');
 
@@ -5,7 +6,10 @@
 
     $result = mysqli_query($conn, $sql);
 
-    $customer = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    print_r($customer);
+    foreach($customers as $customer) {
+        print_r($customer);
+        echo "<br>";
+    }
 ?>

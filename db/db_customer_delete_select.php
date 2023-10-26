@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     $customer_id = $_POST['customer_id'];
 

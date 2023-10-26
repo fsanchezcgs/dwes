@@ -1,3 +1,4 @@
+<?php include ('../header.php'); ?>
 <?php
     $room_type = $_POST['room_type'];
 
