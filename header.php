@@ -40,5 +40,6 @@
             <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
         </h4>
     </nav>
+    <h1><?php echo htmlspecialchars($user);?></h1>
 </body>
 </html>

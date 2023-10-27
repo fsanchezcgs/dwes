@@ -14,8 +14,9 @@
     $result = mysqli_query($conn, $sql);
     $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+    print_r($customers);
     if(empty($customers)){
-
+        echo 'no';
     } else {
         $_SESSION['user'] = $_POST['user'];
         echo $_SESSION['user'];
