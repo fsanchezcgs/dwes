@@ -10,3 +10,4 @@
     <input type="text" name="customer_email">
     <input type="submit" name="submit">
 </form>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

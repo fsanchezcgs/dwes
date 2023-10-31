@@ -1,4 +1,4 @@
-<?php include ('../header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
     $date_in = $_POST['date_in'];
     $date_out = $_POST['date_out'];
@@ -16,8 +16,9 @@
 
     $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    foreach($customers as $customer) {
-        print_r($customer);
+    foreach($rooms as $room) {
+        print_r($room);
         echo "<br>";
     }
 ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

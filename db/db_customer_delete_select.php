@@ -1,4 +1,4 @@
-<?php include ('../header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
     $customer_id = $_POST['customer_id'];
 
@@ -13,3 +13,4 @@
 
     print_r($customer);
 ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

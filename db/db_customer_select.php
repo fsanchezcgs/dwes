@@ -1,4 +1,4 @@
-<?php include ('../header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
     include('./db_connect.php');
 
@@ -13,3 +13,4 @@
         echo "<br>";
     }
 ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

@@ -6,3 +6,4 @@
     <input type="date" name="date_out">
     <input type="submit" name="submit">
 </form>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

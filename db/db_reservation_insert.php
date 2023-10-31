@@ -1,4 +1,4 @@
-<?php include ('../header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
     $room_id = $_POST['room_id'];
     $date_in = $_POST['date_in'];
@@ -13,3 +13,4 @@
 
     $result = mysqli_query($conn, $sql);
 ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

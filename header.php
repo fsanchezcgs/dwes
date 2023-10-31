@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $user = $_SESSION['user'];
+    $user = $_SESSION['user']??"Amigo";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,33 +13,19 @@
     <link rel="icon" href="/student046/dwes/img/1f3e8.png">
 </head>
 <body>
-    <nav class="header navbar">
-        <a href="/student046/dwes/index.php"><img src="/student046/dwes/img/1f3e8.png" alt="" class="logo" height="100px"></a>
-        <h4>
+    <header class="header">
+        <a href="/student046/dwes/index.php" class="logo"><img src="/student046/dwes/img/1f3e8.png" alt="" height="100px"></a>
+        <h2><?php echo htmlspecialchars($user);?></h2>
+        <div class="header-right">
             <a href="/student046/dwes/form/form_customer_select.php">customer select</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/form/form_customer_insert.php">customer insert</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/index.php">customer update</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/form/form_customer_delete_call.php">customer delete</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/form/form_reservation_insert.php">reservation insert</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/form/form_room_select.php">room select</a>
-        </h4>
-        <h4>
             <a href="/student046/dwes/form/form_room_insert.php">room insert</a>
-        </h4>
-        <h4>
-            <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
-        </h4>
-    </nav>
-    <h1><?php echo htmlspecialchars($user);?></h1>
+            <a href="/student046/dwes/form/form_customer_login.php" class="active">Log in</a>
+        </div>
+    </header>
 </body>
 </html>

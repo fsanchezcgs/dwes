@@ -1,4 +1,4 @@
-<?php include ('../header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
     $customer_name = $_POST['customer_name'];
     $customer_surname = $_POST['customer_surname'];
@@ -14,3 +14,4 @@
 
     $result = mysqli_query($conn, $sql);
 ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>
