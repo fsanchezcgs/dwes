@@ -1,6 +1,7 @@
 <?php
     session_start();
     $user = $_SESSION['user']??"Amigo";
+    $id = $_SESSION['id']??"0";
 ?>
 <!DOCTYPE html>
 <html lang="en">

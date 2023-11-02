@@ -18,6 +18,7 @@
         echo "The user dosen't exist";
     } else {
         $_SESSION['user'] = $customers[0]['customer_first_name'];
+        $_SESSION['id'] = $customers[0]['customer_id'];
         header('Location: /student046/dwes/index.php');
     }
 ?>

@@ -16,9 +16,11 @@
 
     $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    foreach($rooms as $room) {
-        print_r($room);
-        echo "<br>";
-    }
+    foreach($rooms as $room) {?>
+        <div>
+            <h5>Room number <?php echo $room['room_id'];?></h5>
+            <img src="../img/<?php print_r($room['room_img'].'.png');?>">
+        </div>
+<?php }
 ?>
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>
