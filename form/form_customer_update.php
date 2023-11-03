@@ -1,5 +1,5 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
-<form action="/student046/dwes/form/form_customer_delete_call.php" method="post">
+<form action="/student046/dwes/form/form_customer_update_call.php" method="post">
     <label for="html">Customer ID: </label>
     <input type="number" name="customer_id">
     <input type="submit" name="submit">

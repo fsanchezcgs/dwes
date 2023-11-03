@@ -11,7 +11,8 @@
     $result = mysqli_query($conn, $sql);
 
     if($result) {
-        echo 'Client deleted succesfully';
+        echo '
+        the client has been deleted succesfully';
     } else {
         echo 'there was a mistake';
     }
