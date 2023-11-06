@@ -19,6 +19,7 @@
     } else {
         $_SESSION['user'] = $customers[0]['customer_first_name'];
         $_SESSION['id'] = $customers[0]['customer_id'];
+        $_SESSION['role'] = $customers[0]['customer_role'];
         header('Location: /student046/dwes/index.php');
     }
 ?>

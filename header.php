@@ -1,7 +1,8 @@
 <?php
     session_start();
-    $user = $_SESSION['user']??"Amigo";
+    $user = $_SESSION['user']??'anonymous';
     $id = $_SESSION['id']??0;
+    $role = $_SESSION['role']??'anonymous';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,11 @@
 <body>
     <header class="header">
         <a href="/student046/dwes/index.php" class="active">Home</a>
-        <h2><?php echo htmlspecialchars($user);?></h2>
+        <?php 
+        if($role == 'admin' || $role == 'customer') {
+            echo'<h2>'.htmlspecialchars($user).'</h2>';
+        }
+        ?>
         <div class="header-right">
             <a href="/student046/dwes/form/form_customer_select.php">customer select</a>
             <a href="/student046/dwes/form/form_customer_insert.php">customer insert</a>
@@ -26,6 +31,9 @@
             <a href="/student046/dwes/form/form_room_select.php">room select</a>
             <a href="/student046/dwes/form/form_room_insert.php">room insert</a>
             <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
+            <form action="/student046/dwes/db/db_customer_logout.php" method="post" class="headForm">
+                <input type="submit" value="Log out">
+            </form>
         </div>
     </header>
 </body>
