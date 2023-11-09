@@ -16,25 +16,68 @@
 </head>
 <body>
     <header class="header">
-        <a href="/student046/dwes/index.php" class="active">Home</a>
-        <?php 
-        if($role == 'admin' || $role == 'customer') {
-            echo'<h2>'.htmlspecialchars($user).'</h2>';
-        }
-        ?>
-        <div class="header-right">
-            <a href="/student046/dwes/form/form_customer_select.php">customer select</a>
-            <a href="/student046/dwes/form/form_customer_insert.php">customer insert</a>
-            <a href="/student046/dwes/form/form_customer_update.php">customer update</a>
-            <a href="/student046/dwes/form/form_customer_delete.php">customer delete</a>
-            <a href="/student046/dwes/form/form_reservation_insert.php">reservation insert</a>
-            <a href="/student046/dwes/form/form_room_select.php">room select</a>
-            <a href="/student046/dwes/form/form_room_insert.php">room insert</a>
-            <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
-            <form action="/student046/dwes/db/db_customer_logout.php" method="post" class="headForm">
-                <input type="submit" value="Log out">
-            </form>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a href="/student046/dwes/index.php" class="navbar-brand"><img src="/student046/dwes/img/icon.png" height="80px"></a>
+                <?php 
+                if($role == 'admin' || $role == 'customer') {
+                    echo'<h2 class="user">'.htmlspecialchars($user).'</h2>';
+                }
+                ?>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Customers
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_delete.php">Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Rooms
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_delete.php">Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Reservations
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="#">Update</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <?php if($role == 'anonymous') { ?>
+                                <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
+                            <?php } else { ?>
+                            <form action="/student046/dwes/db/db_customer_logout.php" method="post" class="headForm">
+                                <input type="submit" value="Log out">
+                            </form>
+                            <?php } ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 </body>
 </html>
