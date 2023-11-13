@@ -1,20 +1,22 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
-    $date_in = $_POST['date_in'];
-    $date_out = $_POST['date_out'];
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
+    if(isset($_POST['submit'])) {
+        $date_in = $_POST['date_in'];
+        $date_out = $_POST['date_out'];
 
-    include('./db_connect.php');
+        include('./db_connect.php');
 
-    $sql = "SELECT *
-    FROM rooms AS ro
-    WHERE ro.room_id NOT IN (
-        SELECT re.room_id
-        FROM reservations AS re
-        WHERE date_in <= '$date_out' AND date_out >= '$date_in')";
+        $sql = "SELECT *
+        FROM 046_rooms AS ro
+        WHERE ro.room_id NOT IN (
+            SELECT re.room_id
+            FROM 046_reservations AS re
+            WHERE date_in <= '$date_out' AND date_out >= '$date_in')";
 
-    $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);
 
-    $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
 ?>
     <h3 class="text-center my-3">Rooms</h3>
     <section class="d-flex justify-content-center flex-wrap">

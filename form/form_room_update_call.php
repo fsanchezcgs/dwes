@@ -4,7 +4,7 @@
         <?php
             $room_id = $_POST['room_id'];
             include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_connect.php');
-            $sql = "SELECT * FROM rooms
+            $sql = "SELECT * FROM 046_rooms
             WHERE room_id = $room_id";
 
             $result = mysqli_query($conn, $sql);
@@ -18,7 +18,7 @@
     <input type="text" name="room_img" value="<?php echo $room[0]['room_img']; ?>">
     <label for="html">Room status: </label>
     <input type="text" name="room_status" value="<?php echo $room[0]['room_status']; ?>">
-    <input type="submit" value="submit">
+    <input type="submit" name="submit">
     <input type="text" name="room_id" value="<?php echo($room_id) ?>" hidden>
 </form>
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

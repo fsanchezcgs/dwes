@@ -1,14 +1,16 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
-    include('./db_connect.php');
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
+    if(isset($_POST['submit'])) {
+        include('./db_connect.php');
 
-    $customer_id = $_POST['customer_id'];
+        $customer_id = $_POST['customer_id'];
 
-    $sql = "SELECT * FROM reservations WHERE customer_id = $customer_id";
+        $sql = "SELECT * FROM 046_reservations WHERE customer_id = $customer_id";
 
-    $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);
 
-    $reservations = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $reservations = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
 ?>
     <h3 class="text-center my-3">Reservations</h3>
     <section class="d-flex justify-content-center flex-wrap">

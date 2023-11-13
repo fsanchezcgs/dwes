@@ -19,14 +19,10 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container-fluid">
                 <a href="/student046/dwes/index.php" class="navbar-brand"><img src="/student046/dwes/img/icon.png" height="80px"></a>
-                <?php 
-                if($role == 'admin' || $role == 'customer') {
-                    echo'<h2 class="user">'.htmlspecialchars($user).'</h2>';
-                }
-                ?>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <!-- <?php if($role == 'admin') { ?> -->
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item mx-3">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Customers
@@ -39,7 +35,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Rooms
@@ -52,7 +48,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Reservations
@@ -60,18 +56,28 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_select.php">Select</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_insert.php">Insert</a></li>
-                                    <li><a class="dropdown-item" href="#">Update</a></li>
+                                    <li><a class="dropdown-item" href="#p">Update</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                 </ul>
                             </div>
                         </li>
+                    </ul>
+                    <?php } ?>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">    
+                            <?php
+                            if($role == 'admin' || $role == 'customer') {
+                                echo'<h2 class="user mx-3">'.htmlspecialchars($user).'</h2>';
+                            }
+                            ?>
+                        </li>
                         <li class="nav-item">
                             <?php if($role == 'anonymous') { ?>
-                                <a href="/student046/dwes/form/form_customer_login.php">Log in</a>
+                                <a href="/student046/dwes/form/form_customer_login.php" class="nav-link rounded-2">Log in</a>
                             <?php } else { ?>
-                            <form action="/student046/dwes/db/db_customer_logout.php" method="post" class="headForm">
-                                <input type="submit" value="Log out">
-                            </form>
+                                <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
                             <?php } ?>
                         </li>
                     </ul>

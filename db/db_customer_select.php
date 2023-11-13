@@ -1,12 +1,14 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
-    include('./db_connect.php');
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
+    if(isset($_POST['submit'])) {
+        include('./db_connect.php');
 
-    $sql = "SELECT * FROM customers";
+        $sql = "SELECT * FROM 046_customers";
 
-    $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);
 
-    $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
 ?>
     <h3 class="text-center my-3">Customers</h3>
     <section class="d-flex justify-content-center flex-wrap">

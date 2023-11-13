@@ -1,19 +1,21 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <?php
-    $customer_id = $_POST['customer_id'];
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
+    if(isset($_POST['submit'])) {
+        $customer_id = $_POST['customer_id'];
 
-    include('./db_connect.php');
+        include('./db_connect.php');
 
-    $sql = "DELETE
-    FROM customers
-    WHERE customer_id = $customer_id";
+        $sql = "DELETE
+        FROM 046_customers
+        WHERE customer_id = $customer_id";
 
-    $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);
 
-    if($result) {
-        echo 'the customer has been deleted succesfully';
-    } else {
-        echo 'there was a mistake';
+        if($result) {
+            echo 'the customer has been deleted succesfully';
+        } else {
+            echo 'there was a mistake';
+        }
     }
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php');
 ?>
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>

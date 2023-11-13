@@ -22,7 +22,7 @@
     <input type="text" name="customer_phone_number" value="<?php echo $customer[0]['customer_phone_number']; ?>">
     <label for="html">Email: </label>
     <input type="text" name="customer_email" value="<?php echo $customer[0]['customer_email']; ?>">
-    <input type="submit" value="submit">
+    <input type="submit" name="submit">
     <input type="text" name="customer_id" value="<?php echo($customer_id) ?>" hidden>
 </form>
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>
