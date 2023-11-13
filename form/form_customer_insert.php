@@ -4,6 +4,8 @@
     <input type="text" name="customer_name">
     <label for="html">Surname</label>
     <input type="text" name="customer_surname">
+    <label for="html">Password</label>
+    <input type="password" name="customer_pwd">
     <label for="html">Phone number</label>
     <input type="number" name="customer_number">
     <label for="html">Email</label>

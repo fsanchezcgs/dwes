@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <a href="/student046/dwes/index.php" class="navbar-brand"><img src="/student046/dwes/img/icon.png" height="80px"></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <!-- <?php if($role == 'admin') { ?> -->
+                    <?php if($role == 'admin') { ?>
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
                             <div class="dropdown">

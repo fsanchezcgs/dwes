@@ -5,9 +5,9 @@
 
         include('./db_connect.php');
 
-        $sql = "DELETE
-        FROM 046_customers
-        WHERE customer_id = $customer_id";
+        $sql = "UPDATE 046_customers
+                SET customer_status = 0
+                WHERE customer_id = $customer_id";
 
         $result = mysqli_query($conn, $sql);
 

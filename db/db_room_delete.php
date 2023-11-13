@@ -6,8 +6,8 @@
         include('./db_connect.php');
 
         $sql = "DELETE
-        FROM 046_rooms
-        WHERE room_id = $room_id";
+                FROM 046_rooms
+                WHERE room_id = $room_id";
 
         $result = mysqli_query($conn, $sql);
 

@@ -7,7 +7,7 @@
     <!-- <label for="html">
         <?php
             include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_connect.php');
-            $sql = "SELECT * FROM customers
+            $sql = "SELECT * FROM 046_customers
             WHERE customer_id = $customer_id";
 
             $result = mysqli_query($conn, $sql);

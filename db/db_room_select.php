@@ -7,11 +7,11 @@
         include('./db_connect.php');
 
         $sql = "SELECT *
-        FROM 046_rooms AS ro
-        WHERE ro.room_id NOT IN (
-            SELECT re.room_id
-            FROM 046_reservations AS re
-            WHERE date_in <= '$date_out' AND date_out >= '$date_in')";
+                FROM 046_rooms AS ro
+                WHERE ro.room_id NOT IN (
+                SELECT re.room_id
+                FROM 046_reservations AS re
+                WHERE date_in <= '$date_out' AND date_out >= '$date_in')";
 
         $result = mysqli_query($conn, $sql);
 

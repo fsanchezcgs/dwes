@@ -5,7 +5,9 @@
 
         $customer_id = $_POST['customer_id'];
 
-        $sql = "SELECT * FROM 046_reservations WHERE customer_id = $customer_id";
+        $sql = "SELECT *
+                FROM 046_reservations
+                WHERE customer_id = $customer_id";
 
         $result = mysqli_query($conn, $sql);
 
@@ -19,10 +21,10 @@
             <h5 class="card-title"><?php echo $reservation['customer_first_name']?></h5>
             <form action="/student046/dwes/form/form_customer_update_call.php" method="post">
                 <input type="number" name="customer_id" value="<?php echo $customer['customer_id']; ?>" hidden>
-                <input type="number" name="customer_first_name" value="<?php echo $customer['customer_first_name']; ?>" hidden>
-                <input type="number" name="customer_last_name" value="<?php echo $customer['customer_last_name']; ?>" hidden>
+                <input type="number" name="room_id" value="<?php echo $customer['room_id']; ?>" hidden>
+                <!-- <input type="number" name="customer_last_name" value="<?php echo $customer['customer_last_name']; ?>" hidden>
                 <input type="number" name="customer_phone_number" value="<?php echo $customer['customer_phone_number']; ?>" hidden>
-                <input type="number" name="customer_email" value="<?php echo $customer['customer_email']; ?>" hidden>
+                <input type="number" name="customer_email" value="<?php echo $customer['customer_email']; ?>" hidden> -->
                 <input type="submit" value="submit">
             </form>
         </div>

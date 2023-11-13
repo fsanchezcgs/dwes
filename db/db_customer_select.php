@@ -3,7 +3,8 @@
     if(isset($_POST['submit'])) {
         include('./db_connect.php');
 
-        $sql = "SELECT * FROM 046_customers";
+        $sql = "SELECT *
+                FROM 046_customers";
 
         $result = mysqli_query($conn, $sql);
 
