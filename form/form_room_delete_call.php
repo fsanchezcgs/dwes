@@ -1,10 +1,10 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <form action="/student046/dwes/db/db_room_delete.php" method="post">
-    <label for="html">Are you sure you wana delete the room number <?php $room_id = $_POST['room_id']; echo($room_id); ?></label>
+    <label>Are you sure you wana delete the room number <?php $room_id = $_POST['room_id']; echo($room_id); ?></label>
     <input type="submit" value="yes" name="submit">
     <button><a href="/student046/dwes/index.php" class="no">no</a></button>
     <br>
-    <!-- <label for="html">
+    <!-- <label>
         <?php
             include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_connect.php');
             $sql = "SELECT * FROM rooms

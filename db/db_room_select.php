@@ -24,7 +24,7 @@
         <div class="card m-3">
             <h5 class="card-title">Room number <?php echo $room['room_id'];?></h5>
             <div class="card-body">
-                <img src="<?php print_r('../img/'.$room['room_img'].'.png');?>" class="card-img-top">
+                <img src="<?php print_r('/student046/dwes/img/'.$room['room_img'].'.png');?>" class="card-img-top">
                 <p class="card-text"><?php if($room['room_type'] == 1) { echo "Category: Single<br>Price: 50,00€"; } if($room['room_type'] == 2) { echo 'Category: Double<br>Price: 70,00€'; } if($room['room_type'] == 3) { echo 'Category: Family<br>Price: 80,00€'; } if($room['room_type'] == 4) { echo 'Category: Deluxe<br>Price: 110,00€'; } ?></p>
             </div>
         </div>

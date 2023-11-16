@@ -56,7 +56,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_select.php">Select</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_insert.php">Insert</a></li>
-                                    <li><a class="dropdown-item" href="#p">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_update.php">Update</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                 </ul>
                             </div>
@@ -85,5 +85,6 @@
             </div>
         </nav>
     </header>
+    <main>
 </body>
 </html>
