@@ -63,20 +63,19 @@
                         </li>
                     </ul>
                     <?php } ?>
-                </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">    
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item d-flex justify-content-center">
                             <?php
                             if($role == 'admin' || $role == 'customer') {
-                                echo'<h2 class="user mx-3">'.htmlspecialchars($user).'</h2>';
+                                echo'<h4 class="user mx-3">'.htmlspecialchars($user).'</h4>';
                             }
                             ?>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-flex">
                             <?php if($role == 'anonymous') { ?>
                                 <a href="/student046/dwes/form/form_customer_login.php" class="nav-link rounded-2">Log in</a>
                             <?php } else { ?>
+                                <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">My reservations</a>
                                 <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
                             <?php } ?>
                         </li>
