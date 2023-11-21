@@ -84,6 +84,6 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid d-flex justify-content-center align-items-center">
 </body>
 </html>

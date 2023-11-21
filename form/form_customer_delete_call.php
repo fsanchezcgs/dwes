@@ -4,22 +4,6 @@
     <input type="submit" value="yes" name="submit">
     <button><a href="/student046/dwes/index.php" class="no">no</a></button>
     <br>
-    <!-- <label>
-        <?php
-            include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_connect.php');
-            $sql = "SELECT * FROM 046_customers
-            WHERE customer_id = $customer_id";
-
-            $result = mysqli_query($conn, $sql);
-
-            $customers = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-            foreach($customers as $customer) {
-                print_r($customer);
-                echo "<br>";
-            }
-        ?>
-    </label> -->
     <input type="text" name="customer_id" value="<?php echo($customer_id) ?>" hidden>
 </form>
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>
