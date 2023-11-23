@@ -73,9 +73,10 @@
                         </li>
                         <li class="nav-item d-flex">
                             <?php if($role == 'anonymous') { ?>
-                                <a href="/student046/dwes/form/form_customer_login.php" class="nav-link rounded-2">Log in</a>
+                                <a href="/student046/dwes/form/form_customer_login.php" class="nav-link rounded-2 mx-2">Log in</a>
+                                <a href="/student046/dwes/form/form_customer_insert.php" class="nav-link rounded-2">Register</a>
                             <?php } else { ?>
-                                <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">My reservations</a>
+                                <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2 mx-2">My reservations</a>
                                 <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
                             <?php } ?>
                         </li>
@@ -84,6 +85,6 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid d-flex justify-content-center align-items-center">
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center">
 </body>
 </html>

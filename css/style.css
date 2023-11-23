@@ -33,15 +33,19 @@ footer{
     background-color: rgb(35, 37, 63);
 }
 
-form {
-    margin: 8%;
-}
-
 i, span, .user {
     color: white;
 }
 
-.no {
+a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.customers {
+    width: 190px;
+}
+
+.line {
+    height: 5px;
 }
