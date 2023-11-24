@@ -1,5 +1,5 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
-<form action="/student046/dwes/form/form_reservation_update_call.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5">
+<form action="/student046/dwes/form/form_reservation_delete_call.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5">
     <div class="form-group">
         <label class="my-2">Reservation ID</label>
         <input type="number" name="reservation_number" class="form-control">

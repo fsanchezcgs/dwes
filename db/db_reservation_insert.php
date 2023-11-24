@@ -15,7 +15,7 @@
 
         $result = mysqli_query($conn, $sql);
 
-        echo 'The reservation have been inserted';
+        echo '<p class="m-5">The reservation have been inserted</p>';
     }
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php');
 ?>
