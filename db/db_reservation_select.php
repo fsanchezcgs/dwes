@@ -21,7 +21,7 @@
             </div>
             <form action="/student046/dwes/form/form_reservation_update_call.php" method="post">
                 <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
-                <input type="submit" value="submit">
+                <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
             </form>
         </div>
     <?php }

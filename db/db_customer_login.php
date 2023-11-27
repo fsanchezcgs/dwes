@@ -17,11 +17,16 @@
         if(empty($customers)){
             echo "The user dosen't exist";
         } else {
-            session_start();
-            $_SESSION['user'] = $customers[0]['customer_first_name'];
-            $_SESSION['id'] = $customers[0]['customer_id'];
-            $_SESSION['role'] = $customers[0]['customer_role'];
-            header('Location: /student046/dwes/index.php');
+            if($customers[0]['customer_status'] != 0) {
+                session_start();
+                $customer = $customers[0];
+                $_SESSION['user'] = $customer['customer_first_name'];
+                $_SESSION['id'] = $customer['customer_id'];
+                $_SESSION['role'] = $customer['customer_role'];
+                header('Location: /student046/dwes/index.php');
+            } else {
+                echo "The user dosen't exist";
+            }
         }
     }
 ?>

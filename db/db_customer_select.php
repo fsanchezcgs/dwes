@@ -23,7 +23,7 @@
                 <input type="number" name="customer_last_name" value="<?php echo $customer['customer_last_name']; ?>" hidden>
                 <input type="number" name="customer_phone_number" value="<?php echo $customer['customer_phone_number']; ?>" hidden>
                 <input type="number" name="customer_email" value="<?php echo $customer['customer_email']; ?>" hidden>
-                <input type="submit" value="submit" class="ms-2 mb-2 btn btn-primary">
+                <input type="submit" name="submit" class="ms-2 mb-2 btn btn-primary">
             </form>
         </div>
     <?php }

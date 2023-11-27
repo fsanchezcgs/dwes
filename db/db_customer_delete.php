@@ -12,9 +12,9 @@
         $result = mysqli_query($conn, $sql);
 
         if($result) {
-            echo 'the customer has been deleted succesfully';
+            echo '<p class="m-5">The customer has been deleted succesfully</p>';
         } else {
-            echo 'there was a mistake';
+            echo '<p class="m-5">There was a mistake</p>';
         }
     }
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php');

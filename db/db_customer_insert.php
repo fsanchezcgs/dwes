@@ -16,7 +16,7 @@
 
         $result = mysqli_query($conn, $sql);
 
-        echo 'The customer have been sucsesfully inserted';
+        echo '<p class="m-5">The customer have been sucsesfully inserted</p>';
     }
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php');
 ?>
