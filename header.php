@@ -28,10 +28,10 @@
                                     Customers
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_select.php">Select</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_insert.php">Insert</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_update.php">Update</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_delete.php">Delete</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_delete.php">Delete</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -41,10 +41,10 @@
                                     Rooms
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_select.php">Select</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_insert.php">Insert</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_update.php">Update</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_delete.php">Delete</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_delete.php">Delete</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -54,10 +54,10 @@
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_select.php">Select</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_insert.php">Insert</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_update.php">Update</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_delete.php">Delete</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -70,8 +70,8 @@
                                     Customer
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_user_update.php">Settings</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_customer_user_delete.php">Delete acount</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_user_update.php">Settings</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_user_delete.php">Delete acount</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -81,7 +81,7 @@
                                     Rooms
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_room_select.php">Check availability</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Check availability</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -91,8 +91,8 @@
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_insert.php">Make a reservation</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/form_reservation_delete.php">Delete a resereservation</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Make a reservation</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete a resereservation</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -108,11 +108,11 @@
                         </li>
                         <li class="nav-item d-flex">
                             <?php if($role == 'anonymous') { ?>
-                                <a href="/student046/dwes/form/form_customer_login.php" class="nav-link rounded-2 mx-2">Log in</a>
-                                <a href="/student046/dwes/form/form_customer_insert.php" class="nav-link rounded-2">Register</a>
+                                <a href="/student046/dwes/form/customer/form_customer_login.php" class="nav-link rounded-2 mx-2">Log in</a>
+                                <a href="/student046/dwes/form/customer/form_customer_insert.php" class="nav-link rounded-2">Register</a>
                             <?php } else { ?>
-                                <a href="/student046/dwes/db/db_myreservation_select.php" class="nav-link rounded-2 mx-2">My reservations</a>
-                                <a href="/student046/dwes/db/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
+                                <a href="/student046/dwes/db/reservation/db_myreservation_select.php" class="nav-link rounded-2 mx-2">My reservations</a>
+                                <a href="/student046/dwes/db/customer/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
                             <?php } ?>
                         </li>
                     </ul>
