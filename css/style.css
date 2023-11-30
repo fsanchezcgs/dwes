@@ -49,3 +49,7 @@ a {
 .line {
     height: 5px;
 }
+
+.card {
+    width: 330px;
+}

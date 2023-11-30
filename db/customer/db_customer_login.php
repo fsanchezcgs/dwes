@@ -23,6 +23,7 @@
                 $_SESSION['user'] = $customer['customer_first_name'];
                 $_SESSION['id'] = $customer['customer_id'];
                 $_SESSION['role'] = $customer['customer_role'];
+                $_SESSION['user_picture'] = $customer['customer_picture'];
                 header('Location: /student046/dwes/index.php');
             } else {
                 echo "The user dosen't exist";

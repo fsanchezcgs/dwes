@@ -3,6 +3,7 @@
     $user = $_SESSION['user']??'anonymous';
     $id = $_SESSION['id']??0;
     $role = $_SESSION['role']??'anonymous';
+    $up = $_SESSION['user_picture']??'default';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,12 +100,12 @@
                     </ul>
                     <?php } ?>
                     <ul class="navbar-nav flex-column">
-                        <li class="nav-item d-flex justify-content-center">
+                        <li class="nav-item d-flex justify-content-center align-items-center mb-1">
                             <?php
-                            if($role == 'admin' || $role == 'customer') {
-                                echo'<h4 class="user mx-3">'.htmlspecialchars($user).'</h4>';
-                            }
-                            ?>
+                            if($role == 'admin' || $role == 'customer') {?>
+                                <img src="/student046/dwes/img/avatar/<?php echo $up?>.png" width="45px" class="rounded-5">
+                                <?php echo'<h4 class="user mx-2">'.htmlspecialchars($user).'</h4>';
+                            } ?>
                         </li>
                         <li class="nav-item d-flex">
                             <?php if($role == 'anonymous') { ?>
