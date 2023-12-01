@@ -19,8 +19,8 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container-fluid">
-                <a href="/student046/dwes/index.php" class="navbar-brand"><img src="/student046/dwes/img/icon.png" height="80px"></a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <a href="/student046/dwes/index.php" class="navbar-brand w-25"><img src="/student046/dwes/img/icon.png" class="logo" height="80px"></a>
+                <div class="collapse navbar-collapse justify-content-center w-50" id="navbarNav">
                     <?php if($role == 'admin') { ?>
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
@@ -55,6 +55,7 @@
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Insert</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_update.php">Update</a></li>
@@ -92,6 +93,7 @@
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Make a reservation</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete a resereservation</a></li>
                                 </ul>
@@ -99,25 +101,24 @@
                         </li>
                     </ul>
                     <?php } ?>
-                    <ul class="navbar-nav flex-column">
-                        <li class="nav-item d-flex justify-content-center align-items-center mb-1">
-                            <?php
-                            if($role == 'admin' || $role == 'customer') {?>
-                                <img src="/student046/dwes/img/avatar/<?php echo $up?>.png" width="45px" class="rounded-5">
-                                <?php echo'<h4 class="user mx-2">'.htmlspecialchars($user).'</h4>';
-                            } ?>
-                        </li>
-                        <li class="nav-item d-flex">
-                            <?php if($role == 'anonymous') { ?>
-                                <a href="/student046/dwes/form/customer/form_customer_login.php" class="nav-link rounded-2 mx-2">Log in</a>
-                                <a href="/student046/dwes/form/customer/form_customer_insert.php" class="nav-link rounded-2">Register</a>
-                            <?php } else { ?>
-                                <a href="/student046/dwes/db/reservation/db_myreservation_select.php" class="nav-link rounded-2 mx-2">My reservations</a>
-                                <a href="/student046/dwes/db/customer/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
-                            <?php } ?>
-                        </li>
-                    </ul>
                 </div>
+                <ul class="navbar-nav align-items-center justify-content-end w-25">
+                    <li class="nav-item d-flex justify-content-center align-items-center mb-1">
+                        <?php
+                        if($role == 'admin' || $role == 'customer') {?>
+                            <img src="/student046/dwes/img/avatar/<?php echo $up?>.png" width="45px" class="rounded-5">
+                            <?php echo'<h4 class="user mx-2">'.htmlspecialchars($user).'</h4>';
+                        } ?>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <?php if($role == 'anonymous') { ?>
+                            <a href="/student046/dwes/form/customer/form_customer_login.php" class="nav-link rounded-2 mx-2">Log in</a>
+                            <a href="/student046/dwes/form/customer/form_customer_insert.php" class="nav-link rounded-2">Register</a>
+                        <?php } else { ?>
+                            <a href="/student046/dwes/db/customer/db_customer_logout.php" class="nav-link rounded-2">Log out</a>
+                        <?php } ?>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>

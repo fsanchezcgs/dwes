@@ -18,6 +18,10 @@ body {
     padding: 20px 10px;
 }
 
+.logo {
+    display: none;
+}
+
 .nav-link {
     color: white;
     background-color: gray;
@@ -52,4 +56,19 @@ a {
 
 .card {
     width: 330px;
+}
+
+.collapse:not(.show) {
+    display: flex;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 992px) {
+    .logo {
+        display: block;
+    }
 }
