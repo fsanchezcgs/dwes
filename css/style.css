@@ -5,8 +5,6 @@
 }
 
 body {
-    margin:0;
-    padding:0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,13 +21,14 @@ body {
 }
 
 .nav-link {
-    color: white;
-    background-color: gray;
+    color: rgba(255, 255, 255, 0.815);
+    background-color: #23253F;
+    border: 2px solid;
 }
 
 .nav-link:hover {
-    color: gray;
-    background-color: white;
+    color: #23253F;
+    background-color: rgba(255, 255, 255, 0.815);
 }
 
 footer{
@@ -38,12 +37,12 @@ footer{
 }
 
 i, span, .user {
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
 }
 
 .customers {
