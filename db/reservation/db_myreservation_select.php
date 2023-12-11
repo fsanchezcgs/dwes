@@ -17,7 +17,7 @@
     } else {
 ?>
     <h3 class="text-center my-3">Reservations</h3>
-    <section class="d-flex justify-content-center flex-wrap">
+    <section class="d-flex justify-content-center alaign-items-center flex-wrap">
 <?php
     foreach($reservations as $reservation) {
 ?>

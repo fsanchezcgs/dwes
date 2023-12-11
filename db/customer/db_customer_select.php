@@ -12,7 +12,7 @@
     }
 ?>
     <h3 class="text-center my-3">Customers</h3>
-    <section class="d-flex justify-content-center flex-wrap">
+    <section class="d-flex justify-content-center alaign-items-center flex-wrap">
     <?php foreach($customers as $customer) {?>
         <div class="card m-3 customers h-auto">
             <h5 class="card-title ms-2 mt-2 mb-0"><?php echo $customer['customer_first_name'].' '.$customer['customer_last_name'];?></h5>

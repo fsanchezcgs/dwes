@@ -2,7 +2,7 @@
     <form action="/student046/dwes/db/customer/db_customer_insert.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5" enctype="multipart/form-data">
         <div class="form-group">
             <label class="my-2">Profile Image</label>
-            <input type="file" name="customer_picture" class="form-control">
+            <input type="file" name="customer_picture" class="form-control" accept="image/png, image/jpg">
         </div>
         <div class="form-group">
             <label class="my-2">Name</label>

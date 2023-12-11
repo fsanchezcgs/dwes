@@ -34,31 +34,31 @@
             <option value="check_in">Check In</option>
             <option value="check_out">Check Out</option>
             <option value="canceled">Canceled</option>
-            <option value="abcent">Abcent</option>
+            <option value="absent">absent</option>
             <?php } elseif($reservation[0]['reservation_status'] == 'check_in') {?>
             <option value="booked">Booked</option>
             <option value="check_in" selected="selected">Check In</option>
             <option value="check_out">Check Out</option>
             <option value="canceled">Canceled</option>
-            <option value="abcent">Abcent</option>
+            <option value="absent">absent</option>
             <?php } elseif($reservation[0]['reservation_status'] == 'check_out') {?>
             <option value="booked">Booked</option>
             <option value="check_in">Check In</option>
             <option value="check_out" selected="selected">Check Out</option>
             <option value="canceled">Canceled</option>
-            <option value="abcent">Abcent</option>
+            <option value="absent">absent</option>
             <?php } elseif($reservation[0]['reservation_status'] == 'canceled') {?>
             <option value="booked">Booked</option>
             <option value="check_in">Check In</option>
             <option value="check_out">Check Out</option>
             <option value="canceled" selected="selected">Canceled</option>
-            <option value="abcent">Abcent</option>
-            <?php } elseif($reservation[0]['reservation_status'] == 'abcent') {?>
+            <option value="absent">absent</option>
+            <?php } elseif($reservation[0]['reservation_status'] == 'absent') {?>
             <option value="booked">Booked</option>
             <option value="check_in">Check In</option>
             <option value="check_out">Check Out</option>
             <option value="canceled">Canceled</option>
-            <option value="abcent" selected="selected">Abcent</option>
+            <option value="absent" selected="selected">absent</option>
             <?php }?>
         </select>
     </div>
