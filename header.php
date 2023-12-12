@@ -106,7 +106,7 @@
                     <li class="nav-item d-flex justify-content-center align-items-center mb-1">
                         <?php
                         if($role == 'admin' || $role == 'customer') {?>
-                            <img src="/student046/dwes/img/avatar/<?php echo $up?>.png" width="45px" class="rounded-5">
+                            <img src="/student046/dwes/img/avatar/<?php echo $up?>" width="45px" class="rounded-5">
                             <?php echo'<h4 class="user mx-2">'.htmlspecialchars($user).'</h4>';
                         } ?>
                     </li>
@@ -123,5 +123,3 @@
         </nav>
     </header>
     <main class="container-fluid d-flex flex-column justify-content-center align-items-center">
-</body>
-</html>
