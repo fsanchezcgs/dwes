@@ -1,7 +1,7 @@
 <?php
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
     if(isset($_POST['submit'])) {
-        $customer_id = $_POST['customer_id'];
+        $customer_id = $_SESSION['id'];
         $room_id = $_POST['room_id'];
         $date_in = $_POST['date_in'];
         $date_out = $_POST['date_out'];

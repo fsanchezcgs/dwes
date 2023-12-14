@@ -9,7 +9,7 @@
         $valid_types = array('image/png', 'image/jpg', 'image/jpeg', 'image/webp');
 
         if(in_array($file_type, $valid_types)) {
-            $path = '/student046/dwes/img/avatar'.$file_name;
+            $path = '/student046/dwes/img/avatar/'.$file_name;
             move_uploaded_file($customer_picture["tmp_name"], $_SERVER['DOCUMENT_ROOT'].$path);
         } else {
             $file_name = "default.png";

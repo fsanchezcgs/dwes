@@ -42,6 +42,7 @@
                                     Rooms
                                 </button>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Check availability</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Select</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_insert.php">Insert</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_update.php">Update</a></li>
@@ -83,7 +84,7 @@
                                     Rooms
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Check availability</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Check availability</a></li>
                                 </ul>
                             </div>
                         </li>
