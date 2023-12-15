@@ -28,7 +28,7 @@
                 <p class="card-text"><?php if($room['room_type'] == 1) { echo "Category: Single<br>Price: 50,00€"; } if($room['room_type'] == 2) { echo 'Category: Double<br>Price: 70,00€'; } if($room['room_type'] == 3) { echo 'Category: Family<br>Price: 80,00€'; } if($room['room_type'] == 4) { echo 'Category: Deluxe<br>Price: 110,00€'; } ?></p>
             </div>
             <hr class="line m-0 my-2">
-            <form action="/student046/dwes/db/reservation/db_reservation_insert_availability.php" method="post" class="m-0">
+            <form action="<?php if($role != 'anonymous') {echo'/student046/dwes/db/reservation/db_reservation_insert_availability.php';}?>" method="post" class="m-0">
                 <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
                 <input type="date" name="date_in" value="<?php echo $date_in; ?>" hidden>
                 <input type="date" name="date_out" value="<?php echo $date_out; ?>" hidden>

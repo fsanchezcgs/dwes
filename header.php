@@ -53,6 +53,19 @@
                         <li class="nav-item mx-3">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Room Type
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_select.php">Select</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_insert.php">Insert</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_update.php">Update</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_delete.php">Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
@@ -81,21 +94,11 @@
                         <li class="nav-item mx-3">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Rooms
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Check availability</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Reservations
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
-                                    <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Make a reservation</a></li>
+                                    <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Make a reservation</a></li>
                                     <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete a resereservation</a></li>
                                 </ul>
                             </div>
@@ -107,7 +110,7 @@
                     <li class="nav-item d-flex justify-content-center align-items-center mb-1">
                         <?php
                         if($role == 'admin' || $role == 'customer') {?>
-                            <img src="/student046/dwes/img/avatar/<?php echo $up?>" width="45px" class="rounded-5">
+                            <img src="/student046/dwes/img/avatar/<?php echo $up?>" width="45px" class="image">
                             <?php echo'<h4 class="user mx-2">'.htmlspecialchars($user).'</h4>';
                         } ?>
                     </li>

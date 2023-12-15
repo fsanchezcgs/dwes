@@ -31,6 +31,10 @@ body {
     background-color: rgba(255, 255, 255, 0.815);
 }
 
+.image {
+    border-radius: 50%;
+}
+
 footer{
     margin-top: auto;
     background-color: rgb(35, 37, 63);
