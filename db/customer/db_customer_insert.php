@@ -1,7 +1,8 @@
 <?php
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/validator.php');
     if(isset($_POST['submit'])) {
-        $customer_name = $_POST['customer_name'];
+        $customer_name = inputValidator($_POST['customer_name']);
         $customer_surname = $_POST['customer_surname'];
         $customer_pwd = $_POST['customer_pwd'];
         $customer_number = $_POST['customer_number'];
