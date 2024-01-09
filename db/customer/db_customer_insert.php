@@ -1,12 +1,12 @@
 <?php
     include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php');
-    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/validator.php');
+    include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/function/validator.php');
     if(isset($_POST['submit'])) {
         $customer_name = inputValidator($_POST['customer_name']);
-        $customer_surname = $_POST['customer_surname'];
-        $customer_pwd = $_POST['customer_pwd'];
-        $customer_number = $_POST['customer_number'];
-        $customer_email = $_POST['customer_email'];
+        $customer_surname = inputValidator($_POST['customer_surname']);
+        $customer_pwd = inputValidator($_POST['customer_pwd']);
+        $customer_number = inputValidator($_POST['customer_number']);
+        $customer_email = inputValidator($_POST['customer_email']);
 
         include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_connect.php');
         include($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/db/db_file.php');
