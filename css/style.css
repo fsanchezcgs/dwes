@@ -70,6 +70,10 @@ a {
     flex-direction: row;
 }
 
+.spanR {
+    margin: 0;
+}
+
 @media (min-width: 992px) {
     .logo {
         display: block;
