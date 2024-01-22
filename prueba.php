@@ -1,5 +1,10 @@
-<html>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/header.php'); ?>
 <head>
+  <style>
+    h5 {
+      color: black;
+    }
+  </style>
 <script>
 function showHint(str) {
   if (str.length == 0) {
@@ -17,8 +22,6 @@ function showHint(str) {
   }
 }
 </script>
-</head>
-<body>
 
 <p><b>Start typing a name in the input field below:</b></p>
 <form action="">
@@ -26,5 +29,4 @@ function showHint(str) {
   <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
 </form>
 <p>Suggestions: <span id="txtHint"></span></p>
-</body>
-</html>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/student046/dwes/footer.php'); ?>
