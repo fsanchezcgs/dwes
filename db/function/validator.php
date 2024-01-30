@@ -1,5 +1,5 @@
 <?php
-function inputValidator($input) {
-    return htmlspecialchars($input);
+function inputValidator($input)
+{
+  return htmlspecialchars($input);
 }
-?>
