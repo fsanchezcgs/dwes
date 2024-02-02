@@ -11,28 +11,9 @@ body {
   background-color: #e9f1f7;
 }
 
-.header {
-  background-color: #23253f;
+header {
   padding: 20px 10px;
-}
-
-.logo {
-  display: none;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.815);
   background-color: #23253f;
-  border: 2px solid;
-}
-
-.nav-link:hover {
-  color: #23253f;
-  background-color: rgba(255, 255, 255, 0.815);
-}
-
-.image {
-  border-radius: 50%;
 }
 
 footer {
@@ -40,8 +21,23 @@ footer {
   background-color: rgb(35, 37, 63);
 }
 
-i,
-span,
+.nav-link {
+  background-color: #23253f;
+  color: rgba(255, 255, 255, 0.815);
+  border: 2px solid;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.815);
+  color: #23253f;
+}
+
+.profilePicture {
+  border-radius: 50%;
+}
+
+footer i,
+footer span,
 .user {
   color: rgba(255, 255, 255, 0.815);
 }
@@ -51,20 +47,12 @@ a {
   color: rgba(255, 255, 255, 0.815);
 }
 
-.customers {
+.customersCard {
   width: 190px;
-}
-
-.line {
-  height: 5px;
 }
 
 .card {
   width: 330px;
-}
-
-.collapse:not(.show) {
-  display: flex;
 }
 
 .navbar-nav {
@@ -74,10 +62,4 @@ a {
 
 .spanR {
   margin: 0;
-}
-
-@media (min-width: 992px) {
-  .logo {
-    display: block;
-  }
 }

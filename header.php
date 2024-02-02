@@ -18,7 +18,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <a href="/student046/dwes/index.php" class="navbar-brand w-25"><img src="/student046/dwes/img/icon.png" class="logo" height="80px"></a>
@@ -112,7 +112,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
             <li class="nav-item d-flex justify-content-center align-items-center mb-1">
               <?php
               if ($role == 'admin' || $role == 'customer') { ?>
-                <img src="/student046/dwes/img/avatar/<?php echo $up ?>" width="45px" class="image">
+                <img src="/student046/dwes/img/avatar/<?php echo $up ?>" width="45px" class="profilePicture">
               <?php echo '<h4 class="user mx-2">' . htmlspecialchars($user) . '</h4>';
               } ?>
             </li>

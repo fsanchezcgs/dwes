@@ -5,9 +5,9 @@ function showCustomers($customers)
   <h3 class="text-center my-3">Customers</h3>
   <section class="d-flex justify-content-center alaign-items-center flex-wrap">
     <?php foreach ($customers as $customer) { ?>
-      <div class="card m-3 customers h-auto">
+      <div class="card m-3 customersCard h-auto">
         <h5 class="card-title ms-2 mt-2 mb-0"><?php echo $customer['customer_first_name'] . ' ' . $customer['customer_last_name']; ?></h5>
-        <hr class="line m-0 my-2">
+        <hr class="m-0 my-2">
         <form action="/student046/dwes/form/customer/form_customer_update_call.php" method="post" class="m-0">
           <input type="number" name="customer_id" value="<?php echo $customer['customer_id']; ?>" hidden>
           <input type="number" name="customer_first_name" value="<?php echo $customer['customer_first_name']; ?>" hidden>

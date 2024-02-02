@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
           } ?>
         </p>
       </div>
-      <hr class="line m-0 my-2">
+      <hr class="m-0 my-2">
       <form action="
             <?php if ($role != 'anonymous') {
               echo '/student046/dwes/db/reservation/db_reservation_insert_availability.php';

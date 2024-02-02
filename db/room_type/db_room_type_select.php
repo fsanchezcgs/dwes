@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         <p>ID: <?php echo $room_type['room_type_id']; ?></p>
         <p>Price: <?php echo $room_type['room_type_price']; ?>€</p>
       </div>
-      <hr class="line m-0 my-2">
+      <hr class="m-0 my-2">
       <form action="/student046/dwes/form/room_type/form_room_type_update_call.php" method="post" class="m-0">
         <input type="number" name="room_type_id" value="<?php echo $room_type['room_type_id']; ?>" hidden>
         <input type="number" name="room_type_name" value="<?php echo $room_type['room_type_name']; ?>" hidden>
