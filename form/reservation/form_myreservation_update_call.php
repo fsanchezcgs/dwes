@@ -11,10 +11,6 @@
   $reservation = mysqli_fetch_all($result, MYSQLI_ASSOC);
   ?>
   <div class="form-group">
-    <label class="my-2">Customer ID</label>
-    <input type="text" readonly name="customer_id" class="form-control" value="<?php echo $reservation[0]['customer_id']; ?>">
-  </div>
-  <div class="form-group">
     <label class="my-2">Room</label>
     <input type="text" name="room_id" class="form-control" value="<?php echo $reservation[0]['room_id']; ?>">
   </div>
@@ -67,6 +63,7 @@
     <input type="text" name="reservation_price" class="form-control" value="<?php echo $reservation[0]['reservation_price'] . '€'; ?>">
   </div>
   <input type="submit" name="submit" class="btn btn-primary my-3 w-100">
+  <input type="text" name="customer_id" value="<?php echo $reservation[0]['customer_id']; ?>" hidden>
   <input type="text" name="reservation_number" value="<?php echo ($reservation_number) ?>" hidden>
 </form>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php'); ?>

@@ -79,6 +79,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     </ul>
                   </div>
                 </li>
+                <a class="commentA" href="/student046/dwes/db/reservation/comment/db_reservation_delete.php">Comment Manager</a>
               </ul>
             <?php } elseif ($role == 'customer') { ?>
               <ul class="navbar-nav">
