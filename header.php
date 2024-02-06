@@ -79,7 +79,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     </ul>
                   </div>
                 </li>
-                <a class="commentA" href="/student046/dwes/db/reservation/comment/db_reservation_delete.php">Comment Manager</a>
+                <a class="commentA" href="/student046/dwes/db/reservation/comment/db_comment_select.php">Comment Manager</a>
               </ul>
             <?php } elseif ($role == 'customer') { ?>
               <ul class="navbar-nav">
@@ -113,7 +113,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
             <li class="nav-item d-flex justify-content-center align-items-center mb-1">
               <?php
               if ($role == 'admin' || $role == 'customer') { ?>
-                <img src="/student046/dwes/img/avatar/<?php echo $up ?>" width="45px" class="profilePicture">
+                <img src="/student046/dwes/img/avatar/<?php echo $up ?>" width="45px" height="45px" class="profilePicture">
               <?php echo '<h4 class="user mx-2">' . htmlspecialchars($user) . '</h4>';
               } ?>
             </li>

@@ -69,3 +69,7 @@ a {
 .spanR {
   margin: 0;
 }
+
+.noReSize {
+  resize: none;
+}
