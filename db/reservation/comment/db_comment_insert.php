@@ -2,7 +2,7 @@
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 if (isset($_POST['submit'])) {
   $customer_id = $id;
-  $reservation_id = $_POST['reservation_number'];
+  $reservation_number = $_POST['reservation_number'];
   $inserted_on = date('Y-m-d H:i:s');
   $content = $_POST['content'];
   $score = $_POST['score'];
@@ -10,9 +10,9 @@ if (isset($_POST['submit'])) {
   include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
   $sql = "INSERT INTO 046_comments
-          (customer_id, reservation_id, inserted_on, content, score)
+          (customer_id, reservation_number, inserted_on, content, score)
           VALUES
-          ($id, $reservation_id, '$inserted_on', '$content', $score)";
+          ($id, $reservation_number, '$inserted_on', '$content', $score)";
 
   $result = mysqli_query($conn, $sql);
 

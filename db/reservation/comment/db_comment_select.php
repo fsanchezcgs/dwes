@@ -15,7 +15,7 @@ if (!(empty($comments))) {
     <?php foreach ($comments as $comment) { ?>
       <form action="/student046/dwes/db/reservation/comment/db_comment_update.php" method="post" class="my-1 p-3 d-flex align-items-center bg-white">
         <label class="me-1">Comment status</label>
-        <select name="comment_status" class="me-3">
+        <select name="comment_status">
           <?php if ($comment['comment_status'] == 'public') { ?>
             <option value="public" selected="selected">Public</option>
             <option value="hidden">Hidden</option>
@@ -30,11 +30,14 @@ if (!(empty($comments))) {
             <option value="not_apropiate" selected="selected">Not apropiate</option>
           <?php } ?>
         </select>
-        <span class="me-3"><?php echo 'Customer ID: ' . $comment['customer_id'] ?></span>
-        <span class="me-3"><?php echo 'Reservation: ' . $comment['reservation_id'] ?></span>
-        <span class="me-3"><?php echo 'Inserted on: ' . $comment['inserted_on'] ?></span>
-        <textarea class="noReSize me-3" readonly maxlength="500"><?php echo $comment['content'] ?></textarea>
-        <span class="me-3"><?php echo 'Score: ' . $comment['score'] ?></span>
+        <span class="mx-1">Customer ID</span>
+        <input type="text" value="<?php echo $comment['customer_id'] ?>" name="customer_id" readonly>
+        <span class="mx-1">Reservation</span>
+        <input type="text" value="<?php echo $comment['reservation_number'] ?>" name="reservation_number" width="20px" readonly>
+        <span class="mx-1">Inserted on</span>
+        <input type="text" value="<?php echo $comment['inserted_on'] ?>" width="20px" readonly>
+        <textarea class="noReSize mx-1" readonly maxlength="500"><?php echo $comment['content'] ?></textarea>
+        <span class="mx-1"><?php echo 'Score ' . $comment['score'] ?></span>
         <input type="submit" name="submit" value="Update" class="ms-2 mb-2 btn btn-primary">
       </form>
     <?php
