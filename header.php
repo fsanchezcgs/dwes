@@ -33,8 +33,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_insert.php">Insert</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_update.php">Update</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_delete.php">Delete</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_update_call.php">Update</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_delete_call.php">Delete</a></li>
                     </ul>
                   </div>
                 </li>
@@ -47,8 +47,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Check availability</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_insert.php">Insert</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_update.php">Update</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_delete.php">Delete</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_update_call.php">Update</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_delete_call.php">Delete</a></li>
                     </ul>
                   </div>
                 </li>
@@ -60,8 +60,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_insert.php">Insert</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_update.php">Update</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_delete.php">Delete</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_update_call.php">Update</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_delete_call.php">Delete</a></li>
                     </ul>
                   </div>
                 </li>
@@ -74,8 +74,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                       <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Insert</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_update.php">Update</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_update_call.php">Update</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete_call.php">Delete</a></li>
                     </ul>
                   </div>
                 </li>

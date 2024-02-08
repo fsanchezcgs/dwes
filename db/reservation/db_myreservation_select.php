@@ -28,7 +28,7 @@ if (!(empty($reservations))) {
           <p class="spanR"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="spanR"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
-        <form action="/student046/dwes/form/reservation/form_myreservation_update_call.php" method="post">
+        <form action="/student046/dwes/form/reservation/form_myreservation_update.php" method="post">
           <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
           <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
         </form>

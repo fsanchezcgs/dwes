@@ -2,8 +2,9 @@
 <form action="/student046/dwes/db/customer/db_customer_update.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5">
   <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
-  $sql = "SELECT * FROM 046_customers
-        WHERE customer_id = $id";
+  $sql = "SELECT *
+          FROM 046_customers
+          WHERE customer_id = $id";
 
   $result = mysqli_query($conn, $sql);
 
