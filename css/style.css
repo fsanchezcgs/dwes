@@ -66,10 +66,6 @@ a {
   flex-direction: row;
 }
 
-.spanR {
-  margin: 0;
-}
-
 .noReSize {
   resize: none;
 }

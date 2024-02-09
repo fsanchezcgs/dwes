@@ -20,13 +20,13 @@ if (!(empty($reservations))) {
       <div class="card m-3 p-3">
         <h5 class="card-title">Reservation number: <?php echo $reservation['reservation_number'] ?></h5>
         <div class="card-body">
-          <p class="card-text spanR"><?php echo 'Customer ID: ' . $reservation['customer_id'] ?></p>
-          <p class="spanR"><?php echo 'Room reserved: ' . $reservation['room_id'] ?></p>
-          <p class="spanR"><?php echo 'Check in: ' . $reservation['date_in'] ?></p>
+          <p class="card-text m-0"><?php echo 'Customer ID: ' . $reservation['customer_id'] ?></p>
+          <p class="m-0"><?php echo 'Room reserved: ' . $reservation['room_id'] ?></p>
+          <p class="m-0"><?php echo 'Check in: ' . $reservation['date_in'] ?></p>
           <p><?php echo 'Check out: ' . $reservation['date_out'] ?></p>
           <hr>
-          <p class="spanR"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
-          <p class="spanR"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
+          <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
+          <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
         <form action="/student046/dwes/form/reservation/form_myreservation_update.php" method="post">
           <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
