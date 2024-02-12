@@ -8,12 +8,12 @@ function showCustomers($customers)
       <div class="card m-3 customersCard h-auto">
         <h5 class="card-title ms-2 mt-2 mb-0"><?php echo $customer['customer_first_name'] . ' ' . $customer['customer_last_name']; ?></h5>
         <hr class="m-0 my-2">
-        <form action="/student046/dwes/form/customer/form_customer_update_call.php" method="post" class="m-0">
+        <form action="/student046/dwes/form/customer/form_customer_update.php" method="post" class="m-0">
           <input type="number" name="customer_id" value="<?php echo $customer['customer_id']; ?>" hidden>
-          <input type="number" name="customer_first_name" value="<?php echo $customer['customer_first_name']; ?>" hidden>
-          <input type="number" name="customer_last_name" value="<?php echo $customer['customer_last_name']; ?>" hidden>
+          <input type="text" name="customer_first_name" value="<?php echo $customer['customer_first_name']; ?>" hidden>
+          <input type="text" name="customer_last_name" value="<?php echo $customer['customer_last_name']; ?>" hidden>
           <input type="number" name="customer_phone_number" value="<?php echo $customer['customer_phone_number']; ?>" hidden>
-          <input type="number" name="customer_email" value="<?php echo $customer['customer_email']; ?>" hidden>
+          <input type="email" name="customer_email" value="<?php echo $customer['customer_email']; ?>" hidden>
           <input type="submit" value="Update" name="submit" class="ms-2 mb-2 btn btn-primary">
         </form>
       </div>

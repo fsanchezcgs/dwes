@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
         </p>
       </div>
       <hr class="m-0 my-2">
-      <form action="/student046/dwes/form/room/form_room_update_call.php" method="post" class="m-0">
+      <form action="/student046/dwes/form/room/form_room_update.php" method="post" class="m-0">
         <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
         <input type="number" name="room_type" value="<?php echo $room['room_type']; ?>" hidden>
         <input type="number" name="room_img" value="<?php echo $room['room_img']; ?>" hidden>

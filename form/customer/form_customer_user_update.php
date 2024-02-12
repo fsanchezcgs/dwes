@@ -20,7 +20,7 @@
   </div>
   <div class="form-group">
     <label class="my-2">Password</label>
-    <input type="text" name="customer_pwd" value="<?php echo $customer[0]['customer_pwd']; ?>" class="form-control">
+    <input type="password" name="customer_pwd" value="<?php echo $customer[0]['customer_pwd']; ?>" class="form-control">
   </div>
   <div class="form-group">
     <label class="my-2">Phone number</label>
@@ -28,7 +28,7 @@
   </div>
   <div class="form-group">
     <label class="my-2">Email</label>
-    <input type="text" name="customer_email" value="<?php echo $customer[0]['customer_email']; ?>" class="form-control">
+    <input type="email" name="customer_email" value="<?php echo $customer[0]['customer_email']; ?>" class="form-control">
   </div>
   <input type="submit" name="submit" class="btn btn-primary my-3 w-100">
   <input type="text" name="customer_id" value="<?php echo ($customer[0]['customer_id']) ?>" hidden>

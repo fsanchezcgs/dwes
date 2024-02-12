@@ -1,4 +1,8 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php'); ?>
+<?php
+if(isset($_POST['submit'])) {
+  if(empty($_POST['email'])) {}
+}
+include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php'); ?>
 <form action="/student046/dwes/db/customer/db_customer_insert.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5" enctype="multipart/form-data">
   <div class="form-group">
     <label class="my-2">Profile Image</label>
@@ -22,7 +26,7 @@
   </div>
   <div class="form-group">
     <label class="my-2">Email</label>
-    <input type="text" name="customer_email" class="form-control">
+    <input type="email" name="customer_email" class="form-control">
   </div>
   <input type="submit" name="submit" class="btn btn-primary my-3 w-100">
 </form>
