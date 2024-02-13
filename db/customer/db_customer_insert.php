@@ -1,5 +1,4 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/function/validator.php');
 if (isset($_POST['submit'])) {
   $customer_name = inputValidator($_POST['customer_name']);
@@ -18,6 +17,13 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
+  if ($result) {
+    header('Location: /student046/dwes/index.php');
+  } else {
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
+    echo '<p class="m-5">There was a mistake</p>';
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
+  }
+
   echo '<p class="m-5">The customer have been sucsesfully inserted</p>';
 }
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
