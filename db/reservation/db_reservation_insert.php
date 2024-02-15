@@ -1,5 +1,4 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 if (isset($_POST['submit'])) {
   $customer_id = $_POST['customer_id'];
   $room_id = $_POST['room_id'];
@@ -15,6 +14,11 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
-  echo '<p class="m-5">The reservation have been inserted</p>';
+  if ($result) {
+    header('Location: /student046/dwes/index.php');
+  } else {
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
+    echo '<p class="m-5">There was a mistake</p>';
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
+  }
 }
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');

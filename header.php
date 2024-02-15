@@ -32,6 +32,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_select.php">Select</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_select_ajax.php">Select Ajax</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_insert.php">Insert</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_update_call.php">Update</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/customer/form_customer_delete_call.php">Delete</a></li>

@@ -42,9 +42,11 @@ if (isset($_POST['submit'])) {
       </div>
       <hr class="m-0 my-2">
       <form action="
-            <?php if ($role != 'anonymous') {
+            <?php
+            if ($role != 'anonymous') {
               echo '/student046/dwes/db/reservation/db_reservation_insert_availability.php';
-            } ?>
+            }
+            ?>
             " method="post" class="m-0">
         <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
         <input type="date" name="date_in" value="<?php echo $date_in; ?>" hidden>

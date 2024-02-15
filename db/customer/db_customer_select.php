@@ -5,7 +5,8 @@ if (isset($_POST['submit'])) {
   include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
   $sql = "SELECT *
-          FROM 046_customers";
+          FROM 046_customers
+          WHERE customer_status = 1";
 
   $result = mysqli_query($conn, $sql);
 
