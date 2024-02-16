@@ -25,17 +25,22 @@ if (!(empty($reservations))) {
           <p class="m-0"><?php echo 'Check in: ' . $reservation['date_in'] ?></p>
           <p><?php echo 'Check out: ' . $reservation['date_out'] ?></p>
           <hr>
+          <p class="m-0">Service:</p>
+          <p class="m-0"><?php echo 'Bar: '?></p>
+          <hr>
           <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
-        <form action="/student046/dwes/form/reservation/form_myreservation_update.php" method="post">
-          <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
-          <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
-        </form>
-        <form action="/student046/dwes/form/reservation/comment/form_comment_insert.php" method="post">
-          <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
-          <input type="submit" name="submit" value="Comment" class="ms-2 mb-2 btn btn-primary">
-        </form>
+        <div class="d-flex">
+          <form action="/student046/dwes/form/reservation/form_myreservation_update.php" method="post">
+            <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
+            <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
+          </form>
+          <form action="/student046/dwes/form/reservation/comment/form_comment_insert.php" method="post">
+            <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
+            <input type="submit" name="submit" value="Comment" class="ms-2 mb-2 btn btn-primary">
+          </form>
+        </div>
       </div>
     <?php
     }

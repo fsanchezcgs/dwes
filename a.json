@@ -1,15 +1,8 @@
 {
-  "room_service": {
-    "ticketNumber": 0,
-    "productList": [],
-    "ticketDate": "0000-00-00",
-    "totalPrice": 0
-  },
   "bar": {
     "tickets": [
       {
         "ticketNumber": 0,
-        "productList": [],
         "ticketDate": "0000-00-00",
         "ticketPrice": 0
       }
@@ -20,7 +13,8 @@
     "tickets": [
       {
         "ticketNumber": 0,
-        "spaServices": [],
+        "date_in": "",
+        "date_out": "",
         "ticketDate": "0000-00-00",
         "ticketPrice": 0
       }
@@ -31,16 +25,11 @@
     "tickets": [
       {
         "ticketNumber": 0,
-        "spaServices": [],
         "ticketDate": "0000-00-00",
         "ticketPrice": 0
       }
     ],
     "totalPrice": 0
-  },
-  "hairdresser": {
-    "tickets": [],
-    "totalPrice": 0
   }
 }
-{ "room_service": { "tickets": [], "totalPrice": 0 }, "bar": { "tickets": [], "totalPrice": 0 }, "spa": { "tickets": [], "totalPrice": 0 }, "gym": { "tickets": [], "totalPrice": 0 }, "hairdresser": { "tickets": [], "totalPrice": 0 } }
+{ "bar": { "tickets": [], "totalPrice": 0 }, "spa": { "tickets": [], "totalPrice": 0 }, "gym": { "tickets": [], "totalPrice": 0 } }

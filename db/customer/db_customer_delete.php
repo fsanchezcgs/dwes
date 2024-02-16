@@ -1,5 +1,4 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 if (isset($_POST['submit'])) {
   $customer_id = $_POST['customer_id'];
 
@@ -12,9 +11,10 @@ if (isset($_POST['submit'])) {
   $result = mysqli_query($conn, $sql);
 
   if ($result) {
-    echo '<p class="m-5">The customer has been deleted succesfully</p>';
+    header('Location: /student046/dwes/db/customer/db_customer_select.php');
   } else {
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
     echo '<p class="m-5">There was a mistake</p>';
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
   }
 }
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');

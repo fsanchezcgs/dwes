@@ -15,6 +15,12 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
-  echo '<p class="m-5">The customer have been sucsesfully updated</p>';
+  if ($result) {
+    header('Location: /student046/dwes/db/customer/db_customer_select.php');
+  } else {
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
+    echo '<p class="m-5">There was a mistake</p>';
+    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
+  }
 }
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');

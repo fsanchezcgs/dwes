@@ -26,14 +26,16 @@ if (isset($_POST['submit'])) {
           <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
-        <form action="/student046/dwes/form/reservation/form_reservation_update.php" method="post">
-          <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
-          <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
-        </form>
-        <form action="/student046/dwes/form/reservation/form_reservation_delete.php" method="post">
-          <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
-          <input type="submit" name="submit" value="Delete" class="ms-2 mb-2 btn btn-danger">
-        </form>
+        <div class="d-flex">
+          <form action="/student046/dwes/form/reservation/form_reservation_update.php" method="post">
+            <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
+            <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
+          </form>
+          <form action="/student046/dwes/form/reservation/form_reservation_delete.php" method="post">
+            <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
+            <input type="submit" name="submit" value="Delete" class="ms-2 mb-2 btn btn-danger">
+          </form>
+        </div>
       </div>
     <?php
     }
