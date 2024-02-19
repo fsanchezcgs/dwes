@@ -1,5 +1,4 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 if (isset($_POST['submit'])) {
   $comment_status = $_POST['reservation_status'];
   $comment_number = $_POST['reservation_number'];
@@ -13,6 +12,5 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
-  echo '<p class="m-5">The comment status have been sucsesfully changed</p>';
+  header('Location: /student046/dwes/db/reservation/comment/db_comment_select.php');
 }
-include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
