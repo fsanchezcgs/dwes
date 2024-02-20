@@ -1,16 +1,16 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
-if (isset($_POST['submit'])) {
-  include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
+// if (isset($_POST['submit'])) {
+include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
-  $sql = "SELECT *
+$sql = "SELECT *
           FROM 046_reservations";
 
-  $result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
 
-  $reservations = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  if (!(empty($reservations))) {
-  }
+$reservations = mysqli_fetch_all($result, MYSQLI_ASSOC);
+if (!(empty($reservations))) {
+  // }
 ?>
   <h3 class="text-center my-3">Reservations</h3>
   <section class="d-flex justify-content-center flex-wrap">

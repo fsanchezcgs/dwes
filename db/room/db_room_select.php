@@ -1,16 +1,16 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
-if (isset($_POST['submit'])) {
+// if (isset($_POST['submit'])) {
 
-  include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
-  $sql = "SELECT *
-                FROM 046_rooms";
+$sql = "SELECT *
+        FROM 046_rooms";
 
-  $result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
 
-  $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
-}
+$rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
+// }
 ?>
 <h3 class="text-center my-3">Rooms</h3>
 <section class="d-flex justify-content-center alaign-items-center flex-wrap">

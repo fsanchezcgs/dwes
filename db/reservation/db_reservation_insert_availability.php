@@ -15,6 +15,6 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
-  header('Location: /student046/dwes/index.php');
+  // header('Location: /student046/dwes/index.php');
 }
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');

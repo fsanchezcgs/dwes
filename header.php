@@ -47,7 +47,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Check availability</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Select</a></li>
+                      <!-- <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_select.php">Select</a></li> -->
+                      <li><a class="dropdown-item" href="/student046/dwes/db/room/db_room_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_insert.php">Insert</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_update_call.php">Update</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_delete_call.php">Delete</a></li>
@@ -60,7 +61,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                       Room Type
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_select.php">Select</a></li>
+                      <!-- <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_select.php">Select</a></li> -->
+                      <li><a class="dropdown-item" href="/student046/dwes/db/room_type/db_room_type_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_insert.php">Insert</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_update_call.php">Update</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room_type/form_room_type_delete_call.php">Delete</a></li>
@@ -74,7 +76,8 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li>
+                      <!-- <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li> -->
+                      <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_reservation_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Insert</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_update_call.php">Update</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete_call.php">Delete</a></li>
@@ -104,7 +107,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Make a reservation</a></li>
-                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete.php">Delete a resereservation</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete_call.php">Delete a resereservation</a></li>
                     </ul>
                   </div>
                 </li>

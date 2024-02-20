@@ -25,9 +25,6 @@ if (!(empty($reservations))) {
           <p class="m-0"><?php echo 'Check in: ' . $reservation['date_in'] ?></p>
           <p><?php echo 'Check out: ' . $reservation['date_out'] ?></p>
           <hr>
-          <p class="m-0">Service:</p>
-          <p class="m-0"><?php echo 'Bar: '?></p>
-          <hr>
           <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
