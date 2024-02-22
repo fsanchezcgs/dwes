@@ -16,18 +16,18 @@ if (!(empty($comments))) {
       <form action="/student046/dwes/db/reservation/comment/db_comment_update.php" method="post" class="my-1 p-3 d-flex align-items-center bg-white">
         <label class="me-1">Comment status</label>
         <select name="comment_status">
-          <?php if ($comment['comment_status'] == 'public') { ?>
-            <option value="public" selected="selected">Public</option>
-            <option value="hidden">Hidden</option>
-            <option value="not_apropiate">Not apropiate</option>
-          <?php } elseif ($comment['comment_status'] == 'hidden') { ?>
-            <option value="public">Public</option>
-            <option value="hidden" selected="selected">Hidden</option>
-            <option value="not_apropiate">Not apropiate</option>
-          <?php } elseif ($comment['comment_status'] == 'not_apropiate') { ?>
-            <option value="public">Public</option>
-            <option value="hidden">Hidden</option>
-            <option value="not_apropiate" selected="selected">Not apropiate</option>
+          <?php if ($comment['comment_status'] == 'published') { ?>
+            <option value="published" selected="selected">Published</option>
+            <option value="pending">Pending</option>
+            <option value="banned">Banned</option>
+          <?php } elseif ($comment['comment_status'] == 'pending') { ?>
+            <option value="published">Published</option>
+            <option value="pending" selected="selected">Pending</option>
+            <option value="banned">Banned</option>
+          <?php } elseif ($comment['comment_status'] == 'banned') { ?>
+            <option value="published">Published</option>
+            <option value="pending">Pending</option>
+            <option value="banned" selected="selected">Banned</option>
           <?php } ?>
         </select>
         <span class="mx-1">Customer ID</span>

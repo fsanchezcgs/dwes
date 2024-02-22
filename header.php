@@ -21,7 +21,9 @@ $up = $_SESSION['user_picture'] ?? 'default';
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-          <a href="/student046/dwes/index.php" class="navbar-brand w-25"><img src="/student046/dwes/img/icon.png" class="logo" height="80px"></a>
+          <div class="w-25">
+            <a href="/student046/dwes/index.php" class="navbar-brand"><img src="/student046/dwes/img/icon.png" class="logo" height="80px"></a>
+          </div>
           <div class="collapse navbar-collapse justify-content-center w-50" id="navbarNav">
             <?php if ($role == 'admin') { ?>
               <ul class="navbar-nav">

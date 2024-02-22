@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     header('Location: /student046/dwes/index.php');
   } else {
     include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
-    echo '<p class="m-5">The user do not exist</p>';
+    echo '<p class="m-5">The user, or password are incorrect</p>';
     include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
   }
 }

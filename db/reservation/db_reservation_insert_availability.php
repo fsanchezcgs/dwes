@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
 
   $result = mysqli_query($conn, $sql);
 
+  echo '<p class="m-5">The reservation was successful</p>';
   // header('Location: /student046/dwes/index.php');
 }
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
