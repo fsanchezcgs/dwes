@@ -15,7 +15,7 @@ if (!(empty($reservations))) {
   <h3 class="text-center my-3">Reservations</h3>
   <section class="d-flex justify-content-center flex-wrap">
     <?php foreach ($reservations as $reservation) { ?>
-      <div class="card m-3 p-3">
+      <div class="card m-3 p-3 w-auto">
         <h5 class="card-title">Reservation number: <?php echo $reservation['reservation_number'] ?></h5>
         <div class="card-body">
           <p class="card-text m-0"><?php echo 'Customer ID: ' . $reservation['customer_id'] ?></p>
