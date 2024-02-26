@@ -4,8 +4,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
 $sql = "SELECT *
-          FROM 046_reservations";
-
+        FROM 046_reservations";
+        
 $result = mysqli_query($conn, $sql);
 
 $reservations = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -17,15 +17,15 @@ if (!(empty($reservations))) {
     <?php foreach ($reservations as $reservation) { ?>
       <div class="card m-3 p-3 w-auto">
         <h5 class="card-title">Reservation number: <?php echo $reservation['reservation_number'] ?></h5>
-        <div class="card-body">
-          <p class="card-text m-0"><?php echo 'Customer ID: ' . $reservation['customer_id'] ?></p>
+        <div class="card-body pb-0">
+          <p class="m-0"><?php echo 'Customer ID: ' . $reservation['customer_id'] ?></p>
           <p class="m-0"><?php echo 'Room reserved: ' . $reservation['room_id'] ?></p>
           <p class="m-0"><?php echo 'Check in: ' . $reservation['date_in'] ?></p>
-          <p><?php echo 'Check out: ' . $reservation['date_out'] ?></p>
-          <hr>
+          <p class="m-0"><?php echo 'Check out: ' . $reservation['date_out'] ?></p>
           <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
+        <hr>
         <div class="d-flex">
           <form action="/student046/dwes/form/reservation/form_reservation_update.php" method="post">
             <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>

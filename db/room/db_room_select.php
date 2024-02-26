@@ -35,20 +35,19 @@ $rooms = mysqli_fetch_all($result, MYSQLI_ASSOC);
         </p>
       </div>
       <hr class="m-0 my-2">
-      <form action="/student046/dwes/form/room/form_room_update.php" method="post" class="m-0">
-        <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
-        <input type="number" name="room_type" value="<?php echo $room['room_type']; ?>" hidden>
-        <input type="text" name="room_img" value="<?php echo $room['room_img']; ?>" hidden>
-        <input type="text" name="room_status" value="<?php echo $room['room_status']; ?>" hidden>
-        <input type="submit" value="Update" name="submit" class="ms-2 mb-2 btn btn-primary">
-      </form>
-      <form action="/student046/dwes/form/room/form_room_update.php" method="post" class="m-0">
-        <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
-        <input type="number" name="room_type" value="<?php echo $room['room_type']; ?>" hidden>
-        <input type="text" name="room_img" value="<?php echo $room['room_img']; ?>" hidden>
-        <input type="text" name="room_status" value="<?php echo $room['room_status']; ?>" hidden>
-        <input type="submit" value="Update" name="submit" class="ms-2 mb-2 btn btn-primary">
-      </form>
+      <div class="d-flex">
+        <form action="/student046/dwes/form/room/form_room_update.php" method="post" class="m-0">
+          <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
+          <input type="number" name="room_type" value="<?php echo $room['room_type']; ?>" hidden>
+          <input type="text" name="room_img" value="<?php echo $room['room_img']; ?>" hidden>
+          <input type="text" name="room_status" value="<?php echo $room['room_status']; ?>" hidden>
+          <input type="submit" value="Update" name="submit" class="ms-2 mb-2 btn btn-primary">
+        </form>
+        <form action="/student046/dwes/form/room/form_room_delete.php" method="post" class="m-0">
+          <input type="number" name="room_id" value="<?php echo $room['room_id']; ?>" hidden>
+          <input type="submit" value="Delete" name="submit" class="ms-2 mb-2 btn btn-danger">
+        </form>
+      </div>
     </div>
   <?php
   }

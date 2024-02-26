@@ -15,13 +15,5 @@ if (isset($_POST['submit'])) {
           ($id, $reservation_number, '$inserted_on', '$content', $score)";
 
   $result = mysqli_query($conn, $sql);
-
-  if ($result) {
-    header('Location: /student046/dwes/db/reservation/db_myreservation_select.php');
-  } else {
-    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
-    echo '<p class="m-5">There was a mistake</p>';
-    include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
-  }
 }
 include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php');
