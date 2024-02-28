@@ -4,7 +4,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
 $sql = "SELECT *
         FROM 046_reservations
-        WHERE customer_id = $id";
+        WHERE customer_id = $id AND reservation_status = 'booked'";
 
 $result = mysqli_query($conn, $sql);
 
@@ -32,12 +32,20 @@ if (!(empty($reservations))) {
           <p class="m-0"><?php echo 'Reservation status: ' . $reservation['reservation_status'] ?></p>
           <p class="m-0"><?php echo 'Price: ' . $reservation['reservation_price'] . '€'; ?></p>
         </div>
-        <hr>
+        <?php if ($reservation['reservation_status'] == 'booked') { ?>
+          <hr>
+        <?php } else if (empty($comment) && $reservation['reservation_status'] == 'check_out') { ?>
+          <hr>
+        <?php } ?>
         <div class="d-flex">
-          <?php if ($reservation['reservation_status'] != 'check_out') { ?>
-            <form action="/student046/dwes/form/reservation/form_myreservation_update.php" method="post">
+          <?php if ($reservation['reservation_status'] == 'booked') { ?>
+            <form action="/student046/dwes/form/reservation/form_reservation_user_update.php" method="post">
               <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
               <input type="submit" name="submit" value="Edit" class="ms-2 mb-2 btn btn-primary">
+            </form>
+            <form action="/student046/dwes/form/reservation/form_reservation_user_delete.php" method="post">
+              <input type="number" name="reservation_number" value="<?php echo $reservation['reservation_number']; ?>" hidden>
+              <input type="submit" name="submit" value="Cancel" class="ms-2 mb-2 btn btn-danger">
             </form>
           <?php } ?>
           <?php if (empty($comment) && $reservation['reservation_status'] == 'check_out') { ?>

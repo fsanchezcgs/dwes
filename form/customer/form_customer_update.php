@@ -12,6 +12,10 @@
   $customer = mysqli_fetch_all($result, MYSQLI_ASSOC);
   ?>
   <div class="form-group">
+    <label class="my-2">Profile Image</label>
+    <input type="file" name="customer_picture" class="form-control" accept="image/png, image/jpg">
+  </div>
+  <div class="form-group">
     <label class="my-2">First name</label>
     <input type="text" name="customer_first_name" value="<?php echo $customer[0]['customer_first_name']; ?>" class="form-control">
   </div>
@@ -29,7 +33,7 @@
   </div>
   <div class="form-group">
     <label class="my-2">Email</label>
-    <input type="email" name="customer_email" value="<?php echo $customer[0]['customer_email']; ?>" class="form-control">
+    <input type="text" name="customer_email" value="<?php echo $customer[0]['customer_email']; ?>" class="form-control">
   </div>
   <input type="submit" name="submit" class="btn btn-primary my-3 w-100">
   <input type="text" name="customer_id" value="<?php echo ($customer_id) ?>" hidden>

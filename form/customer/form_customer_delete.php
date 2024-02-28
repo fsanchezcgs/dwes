@@ -14,8 +14,8 @@
     </b>
   </label>
   <div>
-    <input type="submit" value="Yes" name="submit" class="btn btn-primary my-3">
-    <button class="btn btn-danger my-3"><a href="/student046/dwes/index.php">No</a></button>
+    <input type="submit" value="Yes" name="submit" class="btn btn-primary mt-3">
+    <a href="/student046/dwes/db/customer/db_customer_select.php" class="btn btn-danger mt-3">No</a>
   </div>
   <input type="text" name="customer_id" value="<?php echo ($customer_id) ?>" hidden>
 </form>

@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
   $result = mysqli_query($conn, $sql);
 
   if ($result) {
-    header('Location: /student046/dwes/index.php');
+    header('Location: /student046/dwes/db/reservation/db_reservation_select.php');
   } else {
     include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
     echo '<p class="m-5">There was a mistake</p>';

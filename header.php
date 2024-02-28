@@ -77,7 +77,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                       Reservations
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_reservation_user_select.php">My reservations</a></li>
                       <!-- <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_select.php">Select</a></li> -->
                       <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_reservation_select.php">Select</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_insert.php">Insert</a></li>
@@ -107,7 +107,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
                       Reservations
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_myreservation_select.php">My reservations</a></li>
+                      <li><a class="dropdown-item" href="/student046/dwes/db/reservation/db_reservation_user_select.php">My reservations</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/room/form_room_check_availability.php">Make a reservation</a></li>
                       <li><a class="dropdown-item" href="/student046/dwes/form/reservation/form_reservation_delete_call.php">Delete a resereservation</a></li>
                     </ul>
