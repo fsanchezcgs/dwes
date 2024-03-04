@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
   include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
   $sql = "UPDATE 046_reservations
-          SET reservation_number = 'canceled'
+          SET reservation_status = 'canceled'
           WHERE reservation_number = $reservation_number";
 
   $result = mysqli_query($conn, $sql);

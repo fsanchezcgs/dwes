@@ -45,6 +45,8 @@ if (isset($_POST['submit'])) {
             <?php
             if ($role != 'anonymous') {
               echo '/student046/dwes/db/reservation/db_reservation_insert_availability.php';
+            } else {
+              echo '/student046/dwes/form/customer/form_customer_insert.php';
             }
             ?>
             " method="post" class="m-0">
