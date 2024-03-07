@@ -5,13 +5,11 @@
 </style>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php'); ?>
-
-<h2>The XMLHttpRequest Object</h2>
-<h3>Start typing a name in the input field below:</h3>
-
-<p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+<div>
+  <h3>Search customer:</h3>
+  <p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+</div>
 <p>Suggestions: <span id="txtHint"></span></p>
-
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/footer.php'); ?>
 
 <script>
