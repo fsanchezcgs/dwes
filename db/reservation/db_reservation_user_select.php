@@ -4,7 +4,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/db/db_connect.php');
 
 $sql = "SELECT *
         FROM 046_reservations
-        WHERE customer_id = $id AND reservation_status = 'booked'";
+        WHERE customer_id = $id";
 
 $result = mysqli_query($conn, $sql);
 
