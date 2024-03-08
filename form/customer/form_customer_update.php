@@ -12,10 +12,6 @@
   $customer = mysqli_fetch_all($result, MYSQLI_ASSOC);
   ?>
   <div class="form-group">
-    <label class="my-2">Profile Image</label>
-    <input type="file" name="customer_picture" class="form-control" accept="image/png, image/jpg">
-  </div>
-  <div class="form-group">
     <label class="my-2">First name</label>
     <input type="text" name="customer_first_name" value="<?php echo $customer[0]['customer_first_name']; ?>" class="form-control">
   </div>
