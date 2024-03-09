@@ -8,6 +8,7 @@
           <a href="/student046/dwes/manual/developer_manual.php" class="me-4 text-reset"><i>Developer Manual</i></a>
           <a href="#" class="me-4 text-reset"><i>User Manual</i></a>
           <a href="/student046/dwes/manual/installation_manual.php" class="me-4 text-reset"><i>Installation Manual</i></a>
+          <a href="/student046/dwes/manual/reflexinFinal.php" class="me-4 text-reset"><i>Reflexion Final</i></a>
         </div>
       </section>
     </footer>
