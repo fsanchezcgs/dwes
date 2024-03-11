@@ -32,6 +32,32 @@ footer {
   color: #23253f;
 }
 
+.extraTheme1 {
+  background-color: rgb(51, 137, 213);
+}
+
+.extraTheme1.nav-link {
+  background-color: rgb(51, 137, 213);
+}
+
+.extraTheme1.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.815);
+  color: rgb(51, 137, 213);
+}
+
+.extraTheme2 {
+  background-color: rgb(210, 152, 35);
+}
+
+.extraTheme2.nav-link {
+  background-color: rgb(210, 152, 35);
+}
+
+.extraTheme2.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.815);
+  color: rgb(210, 152, 35);
+}
+
 .profilePicture {
   border-radius: 50%;
 }

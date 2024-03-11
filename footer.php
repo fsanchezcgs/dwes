@@ -1,5 +1,14 @@
     </main>
-    <footer class="footer text-center text-lg-start text-muted">
+    <footer class="
+  <?php
+  if (isset($_COOKIE['046_theme'])) {
+    if (strcmp($_COOKIE['046_theme'], "purple") === 0) {
+    } elseif (strcmp($_COOKIE['046_theme'], "blue") === 0) {
+      echo "extraTheme1";
+    } elseif (strcmp($_COOKIE['046_theme'], "orange") === 0) {
+      echo "extraTheme2";
+    }
+  } ?> footer text-center text-lg-start text-muted">
       <section class="d-flex justify-content-center justify-content-lg-between p-4">
         <div class="me-5 d-none d-lg-block">
           <span>Get informed with our manuals:</span>
