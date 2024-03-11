@@ -1,4 +1,5 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/header.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/student046/dwes/api/accuweather/accuweather.php') ?>
 <form action="/student046/dwes/db/room/db_room_check_availability.php" method="post" class="shadow bg-white rounded p-4 d-flex flex-column align-items-center m-5">
   <div class="form-group">
     <label class="my-2">Day of arraible</label>

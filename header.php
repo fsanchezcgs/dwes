@@ -37,6 +37,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
           <?php if ($role == 'admin') { ?>
             <ul class="navbar-nav">
               <a class="commentA" href="/student046/dwes/form/form_page_theme.php">Change theme</a>
+              <a class="commentA ms-3" href="/student046/dwes/api/accuweather/form_accuweather.php">Accu Reload</a>
               <li class="nav-item mx-3">
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,6 +101,7 @@ $up = $_SESSION['user_picture'] ?? 'default';
             </ul>
           <?php } elseif ($role == 'customer') { ?>
             <ul class="navbar-nav">
+              <a class="commentA" href="/student046/dwes/form/form_page_theme.php">Change theme</a>
               <li class="nav-item mx-3">
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

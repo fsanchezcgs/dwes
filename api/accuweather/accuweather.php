@@ -1,10 +1,20 @@
 <?php
-$current_weather = 'C:/xampp/htdocs/student046/dwes/api/accuweather/json/current_conditions.json';
-if(file_exists($current_weather)) {
-  $current_weather_file = fopen($current_weather, "r");
-  $current_weather_json = json_decode(fread($current_weather_file, filesize($current_weather)), true);
-  print_r($current_weather_json[0]['LocalObservationDateTime']);
-  fclose($current_weather_file);
-} else {
-  echo "the file dosen't exist";
-}
+$current_weather = 'C:/xampp/htdocs/student046/dwes/api/accuweather/json/accuweather.json';
+
+$json = file_get_contents($current_weather);
+$json_decoded = json_decode($json, true);
+
+?>
+
+<div class="d-flex flex-column justify-content-center">
+  <p class="m-0">
+    <?php echo "Temperature: " . $json_decoded[0]["Temperature"]["Metric"]["Value"] . " " .  "º" . $json_decoded[0]["TemperatureSummary"]["Past6HourRange"]["Maximum"]["Metric"]["Unit"]; ?>
+  </p>
+  <p class="m-0">
+    <?php echo "Max: " . $json_decoded[0]["TemperatureSummary"]["Past6HourRange"]["Maximum"]["Metric"]["Value"] . " " .  "º" . $json_decoded[0]["TemperatureSummary"]["Past6HourRange"]["Maximum"]["Metric"]["Unit"]; ?>
+  </p>
+  <p class="m-0">
+  <?php echo "Min: " . $json_decoded[0]["TemperatureSummary"]["Past6HourRange"]["Minimum"]["Metric"]["Value"] . " " . "º" .  $json_decoded[0]["TemperatureSummary"]["Past6HourRange"]["Minimum"]["Metric"]["Unit"];
+  ?>
+  </p>
+</div>
